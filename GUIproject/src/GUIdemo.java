@@ -1,13 +1,15 @@
-
+/**
+ * This is my attempt at using Java Swing
+ */
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
 public class GUIdemo 
-{
-   public static JFrame frame = new JFrame("GUI Demo");
+{   
    public static void main(String[] Args)
-   {	   
+   {
+	   JFrame frame = new JFrame("GUI Demo");//Main UI window
 	   frame.setSize(600, 450);
 	   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	   
@@ -52,9 +54,9 @@ public class GUIdemo
 	   {
           public void actionPerformed(ActionEvent e)
           {
-        	  int num1 = Integer.parseInt(firstNumTF.getText());
+        	  int num1 = Integer.parseInt(firstNumTF.getText());//parses UI data into an int
         	  int num2 = Integer.parseInt(secondNumTF.getText());
-        	  Calc numCalc = new Calc(num1, num2);
+        	  Calc numCalc = new Calc(num1, num2);//creates calc object used to calculate the result
         	  String res;//stores the result of the calculation
         	  
           	  if(e.getActionCommand().equals("Add"))
@@ -91,8 +93,5 @@ public class GUIdemo
 	   
 	   frame.add(mainPanel);
 	   frame.setVisible(true);	   
-   }
-   
-   
-   
+   }   
 }
