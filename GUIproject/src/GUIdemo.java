@@ -11,8 +11,8 @@ public class GUIdemo
 	   
 	   JPanel panel = new JPanel();
 	   panel.setLayout(new BorderLayout());
-	   JTextField tf = new JTextField("This is a test of java swing");
-	   panel.add(tf, BorderLayout.NORTH);
+	   JLabel jl = new JLabel("This is a test of java swing");
+	   panel.add(jl, BorderLayout.NORTH);
 	   
 	   frame.add(panel);
 	   frame.setVisible(true);	   
